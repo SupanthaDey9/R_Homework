@@ -1,0 +1,15 @@
+The code looks good. Still a little bit nitpicking:
+
+Reading from the source would be easier to reproduce the code, for example,
+read.delim("https://github.com/EEOB-BioData/BCB546_Spring2024/blob/main/assignments/UNIX_Assignment/fang_et_al_genotypes.txt")
+
+"#fang_head <- head(fang_data)" - Shouldn't be a comment 
+# snp_head <- head(snp_data) - Shouldn't be a comment 
+clean_maize <- select(maize_subset, abph1.20:zmm3.4) - I think there should be alternate way to do this without writing the exact column names
+
+# Create 10 files for maize and Teosinte data > Code is alright. However, I think automation would have reduced the length and effort, like going
+with a loop.
+
+Not calculating, but just observing the heterozygosity should've been enough.
+
+Thank you!
